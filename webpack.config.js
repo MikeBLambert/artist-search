@@ -1,5 +1,5 @@
 /* eslint-env node */
-//const CleanPlugin = require('clean-webpack-plugin');
+// const CleanPlugin = require('clean-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     // add plugins
-    //new CleanPlugin('./dist/bundle.*.js'),
+    // new CleanPlugin('./dist/bundle.*.js'),
     new HtmlPlugin({ template: './src/index.html' })
   ],
   module: {
