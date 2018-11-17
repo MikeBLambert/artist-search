@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paging component renders a Paging component 1`] = `
+<Fragment>
+  <h1>
+     of 
+  </h1>
+</Fragment>
+`;
