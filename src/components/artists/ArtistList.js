@@ -18,7 +18,7 @@ export default class ArtistList extends Component {
       .then(({ artists, totalPages }) => {
         this.setState({ artists, totalPages });
       });
-  }
+  };
 
   componentDidMount() {
     // this.fetchArtist();
@@ -34,22 +34,17 @@ export default class ArtistList extends Component {
     this.setState({ searchQuery: target.value }, () => {
       this.fetchArtist();
     });
-
-  }
+  };
 
   render() {
     const { currentPage, totalPages, artists } = this.state;
-    // const artistComponent = artists ? artists.map(artist => {
-    //   return <Artist key={artist.id} id={artist.id} name={artist.name} />;
-    // }) : <h1>No results found</h1>;
-
     const artistComponent = artists.map(artist => {
       return <Artist key={artist.id} id={artist.id} name={artist.name} />;
     });
     return (
       <Fragment>
         <Search updateSearchQuery={this.handleSearchQueryUpdate} />
-        <Paging currentPage={currentPage} totalPages={totalPages} updatePage={this.handlePageUpdate} />
+        {artists.length > 0 && <Paging currentPage={currentPage} totalPages={totalPages} updatePage={this.handlePageUpdate} />}
         {artistComponent}
       </Fragment>
     );

@@ -8,3 +8,11 @@ export const getArtists = (page, searchQuery) => {
       totalPages: Math.ceil(json.count / limit)
     }));
 };
+
+export const getArtist = (id) => {
+  return fetch(`http://musicbrainz.org/ws/2/artist/${id}?fmt=json&inc=works`)
+    .then(res => res.json())
+    .then(json => ({
+      songs: json.works
+    }));
+};

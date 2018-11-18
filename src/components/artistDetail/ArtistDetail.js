@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
-import { getArtists } from '../services/artistApi';
+import { getArtist } from '../services/artistApi';
 import Songs from './Songs';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export default class ArtistDetail extends Component {
-
-
   state = {
-    artist: []
+    songs: []
+  };
+
+  fetchSongs = () => {
+    const id = this.props.location.pathname.slice(1).split('/')[1];
+    getArtist(id)
+      .then(({ songs }) => {
+        this.setState({ songs });
+      });
+  };
+
+  componentDidMount() {
+    this.fetchSongs();
   }
 
   render() {
 
     return (
-      <Songs />
+      <Songs songs={this.state.songs}/>
     );
   }
 

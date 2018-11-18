@@ -7,6 +7,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
+        <Route path={ROUTES.ARTIST.path} component={ROUTES.ARTIST.Component} />
         <Route path={ROUTES.ARTISTS.path} component={ROUTES.ARTISTS.Component} />
       </Switch>
     </Router>

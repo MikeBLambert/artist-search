@@ -16,12 +16,11 @@ describe('Songs component', () => {
 
   it('displays an artist\'s name and works', () => {
     const nirvanaSongs = [
-      { id: 1, name: 'Smells Like Teen Spirit' },
-      { id: 2, name: 'Come As You Are' },
-      { id: 3, name: 'Lithium' }
+      { id: 1, title: 'Smells Like Teen Spirit' },
+      { id: 2, title: 'Come As You Are' },
+      { id: 3, title: 'Lithium' }
     ];
     const wrapper = shallow(<Songs songs={nirvanaSongs}  />);
     expect(wrapper.html()).toContain('Come As You Are');
-  })
-
-})
+  });
+});

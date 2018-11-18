@@ -1,5 +1,4 @@
 import ArtistList from '../components/artists/ArtistList';
-import Artist from '../components/artists/Artist';
 import ArtistDetail from '../components/artistDetail/ArtistDetail';
 
 export const ROUTES = {

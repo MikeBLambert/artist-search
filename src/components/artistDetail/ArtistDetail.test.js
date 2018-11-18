@@ -12,4 +12,9 @@ describe('ArtistDetail', () => {
     const wrapper = shallow(<ArtistDetail />);
     expect(wrapper.find('Songs')).toHaveLength(1);
   });
+
+  it('is just messing a around', () => {
+    const wrapper = shallow(<ArtistDetail />);
+    expect(wrapper).toContain('lsdjf');
+  });
 });
