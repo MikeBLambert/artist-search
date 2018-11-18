@@ -1,5 +1,5 @@
 /* eslint-env node */
-// const CleanPlugin = require('clean-webpack-plugin');
+//const CleanPlugin = require('clean-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -8,17 +8,18 @@ module.exports = {
   // put the build output here (not dev server)
   output: {
     filename: 'bundle.[hash].js',
-    publicPath: ''
+    publicPath: '/'
   },
   // mode (will eventually be cmd line arg in package.json scripts)
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
     port: 7899,
+    historyApiFallback: true
   },
   plugins: [
     // add plugins
-    // new CleanPlugin('./dist/bundle.*.js'),
+    //new CleanPlugin('./dist/bundle.*.js'),
     new HtmlPlugin({ template: './src/index.html' })
   ],
   module: {

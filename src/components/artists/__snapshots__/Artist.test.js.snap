@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist component renders an episode 1`] = `
+<div>
+  <h3 />
+  <Link
+    replace={false}
+    to="/artists/9876"
+  >
+    Link
+  </Link>
+</div>
+`;

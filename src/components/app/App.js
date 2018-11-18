@@ -1,12 +1,14 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { ROUTES } from '../../routes/routes';
 
-export default class App extends Component {
+export default function App() {
 
-  render() {
-    return (
-      <Fragment>
-        <h1>Hello World</h1>
-      </Fragment>
-    );
-  }
+  return (
+    <Router>
+      <Switch>
+        <Route path={ROUTES.ARTISTS.path} component={ROUTES.ARTISTS.Component} />
+      </Switch>
+    </Router>
+  );
 }

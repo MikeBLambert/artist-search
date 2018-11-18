@@ -3,7 +3,7 @@
 exports[`Paging component renders a Paging component 1`] = `
 <Fragment>
   <h1>
-     of 
+     out of 
   </h1>
 </Fragment>
 `;

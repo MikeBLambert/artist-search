@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistList renders an ArtistList component 1`] = `
+<Fragment>
+  <Search
+    updateSearchQuery={[Function]}
+  />
+  <Paging
+    currentPage={1}
+    totalPages={1}
+    updatePage={[Function]}
+  />
+</Fragment>
+`;
