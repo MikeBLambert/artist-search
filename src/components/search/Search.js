@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Search = ({ updateSearchQuery }) => {
   return (
@@ -10,8 +10,8 @@ const Search = ({ updateSearchQuery }) => {
   );
 };
 
-// Search.propTypes = {
-//   updateSearchQuery: PropTypes.func.isRequired
-// };
+Search.propTypes = {
+  updateSearchQuery: PropTypes.func.isRequired
+};
 
 export default Search;

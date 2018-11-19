@@ -10,6 +10,7 @@ exports[`search component renders a search component 1`] = `
   <input
     id="search"
     name="searchQuery"
+    onChange={[MockFunction]}
   />
 </Fragment>
 `;

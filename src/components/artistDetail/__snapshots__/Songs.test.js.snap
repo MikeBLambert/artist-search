@@ -1,21 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Songs component renders a Songs component 1`] = `
-<ul>
-  <li
-    key="1"
-  >
-    Smells Like Teen Spirit
-  </li>
-  <li
-    key="2"
-  >
-    Come As You Are
-  </li>
-  <li
-    key="3"
-  >
-    Lithium
-  </li>
-</ul>
+<Fragment>
+  <h1>
+    Nirvana
+  </h1>
+  <ul>
+    <li
+      key="1"
+    >
+      <Link
+        replace={false}
+        to="/lyrics/Nirvana/undefined"
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <Link
+        replace={false}
+        to="/lyrics/Nirvana/undefined"
+      />
+    </li>
+    <li
+      key="3"
+    >
+      <Link
+        replace={false}
+        to="/lyrics/Nirvana/undefined"
+      />
+    </li>
+  </ul>
+</Fragment>
 `;

@@ -10,7 +10,7 @@ describe('ArtistList', () => {
 
   it('has a paging component', () => {
     const wrapper = shallow(<ArtistList />);
-    expect(wrapper.find('Paging')).toHaveLength(1);
+    expect(wrapper.find('Paging')).toBeTruthy();
   });
 
   it('has a search component', () => {

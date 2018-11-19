@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Paging from '../paging/Paging';
 import Artist from './Artist';
 import Search from '../search/Search';
-import { getArtists } from '../services/artistApi';
+import { getArtists } from '../../services/artistApi';
 
 export default class ArtistList extends Component {
   state = {
@@ -13,16 +13,12 @@ export default class ArtistList extends Component {
   };
 
   fetchArtist = () => {
-    const { currentPage, searchQuery } = this.state;
+    const { currentPage, searchQuery, score } = this.state;
     getArtists(currentPage, searchQuery)
       .then(({ artists, totalPages }) => {
-        this.setState({ artists, totalPages });
+        this.setState({ artists, totalPages, score });
       });
   };
-
-  componentDidMount() {
-    // this.fetchArtist();
-  }
 
   handlePageUpdate = page => {
     this.setState({ currentPage: page }, () => {
@@ -32,19 +28,26 @@ export default class ArtistList extends Component {
 
   handleSearchQueryUpdate = ({ target }) => {
     this.setState({ searchQuery: target.value }, () => {
-      this.fetchArtist();
+      {this.state.searchQuery.length > 0 && this.fetchArtist()}
     });
   };
 
   render() {
     const { currentPage, totalPages, artists } = this.state;
+
     const artistComponent = artists.map(artist => {
       return <Artist key={artist.id} id={artist.id} name={artist.name} />;
     });
+    const pagingComponent = artists.length > 0 &&
+      <Paging currentPage={currentPage}
+        totalPages={totalPages}
+        updatePage={this.handlePageUpdate}
+      />;
+
     return (
       <Fragment>
         <Search updateSearchQuery={this.handleSearchQueryUpdate} />
-        {artists.length > 0 && <Paging currentPage={currentPage} totalPages={totalPages} updatePage={this.handlePageUpdate} />}
+        {pagingComponent}
         {artistComponent}
       </Fragment>
     );

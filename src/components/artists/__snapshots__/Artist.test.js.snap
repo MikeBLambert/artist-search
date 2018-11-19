@@ -7,7 +7,7 @@ exports[`Artist component renders an episode 1`] = `
     replace={false}
     to="/artists/9876"
   >
-    Link
+    See all songs
   </Link>
 </div>
 `;

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 const Paging = ({ currentPage, totalPages, updatePage }) => {
@@ -13,11 +13,11 @@ const Paging = ({ currentPage, totalPages, updatePage }) => {
   );
 };
 
-// Paging.propTypes = {
-//   currentPage: PropTypes.number.isRequired,
-//   totalPages: PropTypes.number.isRequired,
-//   updatePage: PropTypes.func.isRequired
-// };
+Paging.propTypes = {
+  currentPage: PropTypes.number.isRequired,
+  totalPages: PropTypes.number.isRequired,
+  updatePage: PropTypes.func.isRequired
+};
 
 
 export default Paging;

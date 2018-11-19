@@ -5,12 +5,14 @@ import Search from './Search';
 describe('search component', () => {
 
   it('renders a search component', () => {
-    const wrapper = shallow(<Search />);
+    const updateSearchQuery = jest.fn();
+    const wrapper = shallow(<Search updateSearchQuery={updateSearchQuery}/>);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('has a label and input', () => {
-    const wrapper = shallow(<Search />)
+    const updateSearchQuery = jest.fn();
+    const wrapper = shallow(<Search updateSearchQuery={updateSearchQuery}/>)
     expect(wrapper.find('input').at(0)).toBeTruthy();
     expect(wrapper.find('label').at(0)).toBeTruthy();
   });
