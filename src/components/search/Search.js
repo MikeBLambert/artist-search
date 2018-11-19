@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import styles from './Search.css';
 
 const Search = ({ updateSearchQuery }) => {
   return (
     <Fragment>
-      <label htmlFor='search'>Search for an Artist</label>
-      <input name='searchQuery' id='search' onChange={updateSearchQuery} />
+      <div id={styles.searchBar}>
+        <label htmlFor='search'>Search for an Artist</label>
+        <input name='searchQuery' id='search' onChange={updateSearchQuery} />
+      </div>
     </Fragment>
   );
 };

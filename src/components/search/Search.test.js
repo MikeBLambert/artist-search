@@ -12,7 +12,7 @@ describe('search component', () => {
 
   it('has a label and input', () => {
     const updateSearchQuery = jest.fn();
-    const wrapper = shallow(<Search updateSearchQuery={updateSearchQuery}/>)
+    const wrapper = shallow(<Search updateSearchQuery={updateSearchQuery}/>);
     expect(wrapper.find('input').at(0)).toBeTruthy();
     expect(wrapper.find('label').at(0)).toBeTruthy();
   });

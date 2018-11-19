@@ -28,7 +28,7 @@ export default class ArtistList extends Component {
 
   handleSearchQueryUpdate = ({ target }) => {
     this.setState({ searchQuery: target.value }, () => {
-      {this.state.searchQuery.length > 0 && this.fetchArtist()}
+      {this.state.searchQuery.length > 0 && this.fetchArtist();}
     });
   };
 

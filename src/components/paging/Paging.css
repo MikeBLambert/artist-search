@@ -1,0 +1,16 @@
+#pagingBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    height: 7vh;
+    margin: 3em;
+    width: 10vw;
+    background: lightgrey;
+    border: 2px solid black;
+    border-radius: 15px;
+
+  }
+}

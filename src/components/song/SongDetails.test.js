@@ -10,5 +10,5 @@ describe('SongDetails component', () => {
   it('shows has an artist, song, and lyrics rendered', () => {
     const wrapper = shallow(<SongDetails artist='The Beatles' song='Hey Jude' lyrics='Lalalalalala'/>);
     expect(wrapper.html()).toContain('The Beatles');
-  })
+  });
 });
