@@ -2,8 +2,12 @@
 
 exports[`ArtistList renders an ArtistList component 1`] = `
 <Fragment>
-  <Search
-    updateSearchQuery={[Function]}
-  />
+  <div
+    id="artistList"
+  >
+    <Search
+      updateSearchQuery={[Function]}
+    />
+  </div>
 </Fragment>
 `;

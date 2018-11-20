@@ -1,0 +1,16 @@
+.container {
+  background-color: lightgrey;
+  border: 5px solid black;
+  box-shadow: 2px 2px grey;
+  border-radius: 15px;
+  margin-top: 50px;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+
+
+  p {
+    font-size: 20px;
+  }
+}

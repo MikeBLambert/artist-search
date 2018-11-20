@@ -1,0 +1,13 @@
+#artistList {
+  background-color: black;
+
+  #artistDisplay {
+    background-color: lightgrey;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 2px 2px lightgrey;
+  }
+
+}

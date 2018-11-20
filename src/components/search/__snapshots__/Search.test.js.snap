@@ -2,15 +2,19 @@
 
 exports[`search component renders a search component 1`] = `
 <Fragment>
-  <label
-    htmlFor="search"
+  <div
+    id="searchBar"
   >
-    Search for an Artist
-  </label>
-  <input
-    id="search"
-    name="searchQuery"
-    onChange={[MockFunction]}
-  />
+    <label
+      htmlFor="search"
+    >
+      Search for an Artist
+    </label>
+    <input
+      id="search"
+      name="searchQuery"
+      onChange={[MockFunction]}
+    />
+  </div>
 </Fragment>
 `;

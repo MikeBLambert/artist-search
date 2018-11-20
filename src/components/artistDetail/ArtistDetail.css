@@ -1,0 +1,17 @@
+#artistDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+  margin-top: 45px;
+  border-radius: 15px;
+  border: 5px solid black;
+  box-shadow: 2px 2px lightgrey;
+
+  #title {
+    color: black;
+    font-family: 'Black Ops One', cursive;
+    font-size: 50px;
+    margin-top: 60px;
+  }
+}

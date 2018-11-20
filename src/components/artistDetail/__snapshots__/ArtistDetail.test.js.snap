@@ -1,3 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArtistDetail renders an ArtistDetail component 1`] = `<Fragment />`;
+exports[`ArtistDetail renders an ArtistDetail component 1`] = `
+<Fragment>
+  <div
+    id="artistDetail"
+  >
+    <h1
+      id="artistTitle"
+    >
+      Songs by 
+    </h1>
+  </div>
+</Fragment>
+`;

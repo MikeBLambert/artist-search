@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Artist component renders an episode 1`] = `
-<div>
+<div
+  id="artistInfo"
+>
   <h3 />
   <Link
     replace={false}

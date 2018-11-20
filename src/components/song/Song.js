@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { getLyrics } from '../../services/lyricsApi';
 import SongDetails from './SongDetails';
+import styles from './Song.css';
 
 export default class Song extends Component {
 
@@ -26,7 +27,9 @@ export default class Song extends Component {
 
     return (
       <Fragment>
-        {!loading && <SongDetails artist={artist} song={song} lyrics={lyrics} />}
+        <div className={styles.container}>
+          {!loading && <SongDetails artist={artist} song={song} lyrics={lyrics} />}
+        </div>
       </Fragment>
     );
   }

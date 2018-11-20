@@ -2,11 +2,12 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { ROUTES } from '../../routes/routes';
+import styles from './Songs.css';
 
 const Songs = ({ songs, artist }) => {
   const songList = songs.length > 0 ? songs.map(song => {
     return (
-      <li key={song.id}>
+      <li key={song.id} id={styles.songItem}>
         <Link to={ROUTES.SONG.linkPath(artist, song.title)}>
           {song.title}
         </Link>
@@ -16,7 +17,6 @@ const Songs = ({ songs, artist }) => {
 
   return  (
     <Fragment>
-      <h1>{artist}</h1>
       <ul>{songList}</ul>
     </Fragment>
   );

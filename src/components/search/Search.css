@@ -2,17 +2,20 @@
   margin: 5em;
   text-align: center;
   box-shadow: 2px 2px grey;
-  padding: 15px;
-  border: 2px solid black;
+  padding: 35px;
+  border: 5px solid black;
   background-color: lightgrey;
   border-radius: 15px;
   label {
-    margin-right: 10px;
+    margin-right: 10vw;
     font-family: 'Black Ops One', cursive;
+    color: black;
+    font-size: 25px;
   }
 
   input {
     border: 2px solid #666666;
     border-radius: 4px;
+    width: 25vw;
   }
 }

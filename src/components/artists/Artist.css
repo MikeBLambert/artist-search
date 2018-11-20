@@ -1,0 +1,9 @@
+#artistInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Black Ops One', cursive;
+  color: black;
+
+}

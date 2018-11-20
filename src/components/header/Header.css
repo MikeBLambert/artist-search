@@ -8,17 +8,20 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 2px 2px grey;
+
 
   #title {
     margin: 0;
     font-family: 'Black Ops One', cursive;
-    color: #666666;
+    color: black;
     font-size: 65px;
   }
 
   img {
-    width: 25%;
+    width: 200px;
     height: 150px;
     border-radius: 100px;
+    opacity: 0.85;
   }
 }

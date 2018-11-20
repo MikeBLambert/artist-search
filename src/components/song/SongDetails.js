@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import styles from './SongDetails.css';
 
 const SongDetails = ({ artist, song, lyrics }) => {
   return (
     <Fragment>
-      <h1>{song} by {artist}</h1>
-      <p>{lyrics}</p>
+      <div id={styles.container}>
+        <h1>{song} by {artist}</h1>
+        <p>{lyrics}</p>
+      </div>
     </Fragment>
   );
 };

@@ -2,20 +2,24 @@
 
 exports[`Paging component renders a Paging component 1`] = `
 <Fragment>
-  <button
-    onClick={[Function]}
+  <div
+    id="pagingBar"
   >
-    Previous
-  </button>
-  <h1>
-    3
-     out of 
-    10
-  </h1>
-  <button
-    onClick={[Function]}
-  >
-    Next
-  </button>
+    <button
+      onClick={[Function]}
+    >
+      Previous
+    </button>
+    <h1>
+      3
+       out of 
+      10
+    </h1>
+    <button
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </div>
 </Fragment>
 `;

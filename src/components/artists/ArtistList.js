@@ -3,6 +3,7 @@ import Paging from '../paging/Paging';
 import Artist from './Artist';
 import Search from '../search/Search';
 import { getArtists } from '../../services/artistApi';
+import styles from './ArtistList.css';
 
 export default class ArtistList extends Component {
   state = {
@@ -46,9 +47,13 @@ export default class ArtistList extends Component {
 
     return (
       <Fragment>
-        <Search updateSearchQuery={this.handleSearchQueryUpdate} />
-        {pagingComponent}
-        {artistComponent}
+        <div id={styles.artistList}>
+          <Search updateSearchQuery={this.handleSearchQueryUpdate} />
+          <div id={styles.artistDisplay}>
+            {pagingComponent}
+            {artistComponent}
+          </div>
+        </div>
       </Fragment>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { getArtist } from '../../services/artistApi';
 import Songs from './Songs';
+import styles from './ArtistDetail.css';
 // import PropTypes from 'prop-types';
 
 export default class ArtistDetail extends Component {
@@ -29,7 +30,10 @@ export default class ArtistDetail extends Component {
 
     return (
       <Fragment>
-        {songsComponent}
+        <div id={styles.artistDetail}>
+          <h1 id={styles.title}>Songs by {artist}</h1>
+          {songsComponent}
+        </div>
       </Fragment>
     );
   }
