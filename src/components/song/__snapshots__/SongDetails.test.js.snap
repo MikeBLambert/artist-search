@@ -2,13 +2,17 @@
 
 exports[`SongDetails component renders a SongDetails component 1`] = `
 <Fragment>
-  <h1>
-    Hey Jude
-     by 
-    The Beatles
-  </h1>
-  <p>
-    Lalalalalala
-  </p>
+  <div
+    id="container"
+  >
+    <h1>
+      Hey Jude
+       by 
+      The Beatles
+    </h1>
+    <p>
+      Lalalalalala
+    </p>
+  </div>
 </Fragment>
 `;

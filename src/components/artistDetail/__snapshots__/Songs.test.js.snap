@@ -2,11 +2,9 @@
 
 exports[`Songs component renders a Songs component 1`] = `
 <Fragment>
-  <h1>
-    Nirvana
-  </h1>
   <ul>
     <li
+      id="songItem"
       key="1"
     >
       <Link
@@ -15,6 +13,7 @@ exports[`Songs component renders a Songs component 1`] = `
       />
     </li>
     <li
+      id="songItem"
       key="2"
     >
       <Link
@@ -23,6 +22,7 @@ exports[`Songs component renders a Songs component 1`] = `
       />
     </li>
     <li
+      id="songItem"
       key="3"
     >
       <Link

@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Song renders a search component 1`] = `<Fragment />`;
+exports[`Song renders a search component 1`] = `
+<Fragment>
+  <div
+    className="container"
+  />
+</Fragment>
+`;

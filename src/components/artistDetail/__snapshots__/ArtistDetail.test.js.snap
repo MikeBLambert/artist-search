@@ -6,7 +6,7 @@ exports[`ArtistDetail renders an ArtistDetail component 1`] = `
     id="artistDetail"
   >
     <h1
-      id="artistTitle"
+      id="title"
     >
       Songs by 
     </h1>
