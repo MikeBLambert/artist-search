@@ -2,6 +2,8 @@ import React from 'react';
 import ArtistDetail from './ArtistDetail';
 import { MemoryRouter } from 'react-router-dom';
 import { shallow } from 'enzyme';
+
+
 jest.mock('../../services/artistApi', () => {
   return { getArtist: () => Promise.resolve({ artist: 'Nirvana', songs: ['Song1', 'Song2'] }) };
 });
