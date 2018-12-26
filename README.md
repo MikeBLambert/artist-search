@@ -1,4 +1,4 @@
-# _Artist Search_
+# _Artist Search/Music Meow!_
 
 ## _An application for searching for the works of your favorite musicians_
 
@@ -27,4 +27,3 @@ Built with React and tested with Jest. Third party APIs: www.musicbrainz.org & w
 
 *MIT*
 Copyright (c) 2018 **_Michael B LAmbert_**
-
